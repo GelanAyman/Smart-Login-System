@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Smart Login System </title>
+
+    <!-- ? ======> Linking bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- ? ======> Linking css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+        <form class="p-5 my-5 rounded-3 w-75" action="">
+            <h2 class="text-center pb-2"> Smart Login System </h2>
+            <div class="input-group mb-2">
+                <input type="text" placeholder="Enter your name" class="form-control bg-transparent signUpNameInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+            </div>
+            <div class="input-group mb-2">
+                <input type="text" placeholder="Enter your email" class="form-control bg-transparent signUpEmailInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+            </div>
+            <div class="input-group mb-2">
+                <input type="text" placeholder="Enter your password" class="form-control bg-transparent signUpPasswordInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+            </div>
+            <button type="button" onclick="signUp()" class="signUpBtn btn w-100"> 
+                Sign Up
+            </button>
+            
+            <p class="pt-2">
+                You have an account? 
+                <a href="./index.html" class="text-decoration-none text-black"> Sign in </a>
+            </p>
+
+            <p class="text-success text-center fw-bolder d-none confirmMsg"> Success </p>
+        </form>
+    </div>
+
+    <!-- ? ======> Linking bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"> </script>
+    
+    <!-- ? ======> Linking JS file -->
+    <script src="./assets/js/main.js"> </script>
+
+    <!-- ? ======> swal -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
